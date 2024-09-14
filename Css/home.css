@@ -1,5 +1,11 @@
 /* Home Page StyleSheet */
 
+:root {
+    --normal-gray: gray;
+    --xxs: 0.75em;
+    --xs: 0.9em;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +28,18 @@ body {
 h1 {
     color: #333;
 }
+
+/* General */
+
+.logo h3 {
+    line-height: 30px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+/* Header */
 
 header {
     display: flex;
@@ -53,6 +71,77 @@ header .connection {
     gap: 10px;
 }
 
-header .connection button {
-    padding: 5px 10px;
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero Section */
+
+#hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 40px;
+    border: 1px solid;
+}
+
+#hero .imgFrame {
+    background: #000;
+}
+
+/* Find A Doctor Section */
+
+#findADoctor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+}
+
+footer .allRight p {
+    font-size: var(--xs);
+    color: var(--normal-gray);
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    gap: 30px;
+}
+
+footer .section h3 {
+    font-size: var(--xs);
+    line-height: 30px;
+}
+
+footer .section ul {
+    font-size: var(--xxs);
+    list-style-type: none;
+}
+
+footer .section ul li {
+    line-height: 16px;
 }

@@ -99,7 +99,7 @@ main {
 
 #findADoctor {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     width: 500px;
     background: #fff;

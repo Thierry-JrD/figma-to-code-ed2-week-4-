@@ -5,3 +5,54 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Ajoute du style basique */
+body {
+    font-family: Arial, sans-serif;
+    /*margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;*/
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header ul li {
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .connection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px
+}
+
+header .connection button {
+    padding: 5px 10px;
+}

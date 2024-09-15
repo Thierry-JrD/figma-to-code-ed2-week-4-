@@ -1,6 +1,7 @@
 /* Footer Js file */
 
 const footerLinks = document.querySelector('.links');
+const copyrightDate = document.getElementById('copyrightDate')
 
 const footerSection = [
     {
@@ -21,6 +22,10 @@ const footerSection = [
     }
 ];
 
+const date = new Date();
+
+const year = date.getFullYear();
+
 const footerRender = () => {
     let footerBuffer = '';
 
@@ -39,4 +44,5 @@ const footerRender = () => {
 };
 
 footerLinks.innerHTML = footerRender();
+copyrightDate.innerHTML = year;
 

@@ -4,6 +4,9 @@
     --normal-gray: gray;
     --xxs: 0.75em;
     --xs: 0.9em;
+    --circle-radius: 70px;
+    --card-radius: 10px;
+    --card-padding: 10px;
 }
 
 * {
@@ -93,6 +96,7 @@ main {
 
 #hero .imgFrame {
     background: #000;
+    border-radius: var(--card-radius);
 }
 
 /* Find A Doctor Section */
@@ -105,6 +109,108 @@ main {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+}
+
+/* Our Result In Number Section*/
+
+#ourResultNumber {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    border: 1px solid;
+}
+
+.ourResultNumberContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.symbol {
+    opacity: 0.5;
+}
+
+/* Reason To Chose Us Section */
+
+#reasonToChoseUs {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 40px;
+    border: 1px solid;
+}
+
+#reasonToChoseUs .imgFrame {
+    background: #000;
+    border-radius: var(--card-radius);
+}
+
+/* Services we provided Section */
+
+#servicesWeProvide {
+    border: 1px solid;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicesWeProvide :nth-child(2) {
+    text-align: center;
+}
+
+.grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#servicesWeProvide .card {
+    border: 1px solid;
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+}
+
+#servicesWeProvide .card .imgFrame {
+    width: 100%;
+    height: 70px;
+    background: #000;
+    border-radius: var(--card-radius);
+}
+
+/* Meet Our Team Members Section */
+
+#meetOurTeamMembers {
+    border: 1px solid;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#meetOurTeamMembers .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border: 1px solid;
+    padding: var(--card-padding);
+    border-radius: var(--card-radius);
+}
+
+#meetOurTeamMembers .card .imgFrame {
+    width: var(--circle-radius);
+    height: var(--circle-radius);
+    background: #000;
+    border-radius: 50%;
 }
 
 /* Footer */

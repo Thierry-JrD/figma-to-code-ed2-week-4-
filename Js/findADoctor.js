@@ -13,7 +13,7 @@ const findADoctorRender = () => {
             <input type='text' placeholder='Specialy'/>
         </div>
     </div>
-    <div><input type='radio' /></div>
+    <div><input type='ckeckbox' /></div>
     <div><button>Search</button></div>
     `;
 

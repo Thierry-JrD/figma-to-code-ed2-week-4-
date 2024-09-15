@@ -6,37 +6,37 @@ const servicesWeProvide = document.getElementById('servicesWeProvide');
 
 const servicesWeProvideData = [
     {
-        'img': 'link',
+        'img': '',
         'title': 'Dental treatments',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': 'link',
+        'img': '',
         'title': 'Bones treatments',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': 'link',
+        'img': '',
         'title': 'Diagnosis',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'Text',
     },
     {
-        'img': 'link',
+        'img': '',
         'title': 'Cardiology',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': 'link',
+        'img': '',
         'title': 'Surgery',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': 'link',
+        'img': '',
         'title': 'Eye care',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
@@ -72,6 +72,6 @@ const servicesWeProvideRender = () => {
 servicesWeProvide.innerHTML = 
 `
     <h2>Services we provide </h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
     <div class="grid">${servicesWeProvideRender()}</div>
 `;

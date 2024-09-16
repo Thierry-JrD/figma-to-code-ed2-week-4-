@@ -3,9 +3,32 @@
 :root {
     --main-color: #007E85;
     --main-white: #FFFFFF;
+    --searchbar-bg: #E5E5E5;
     --icon-bg: #ffffff66;
+    --card-bg: rgba(255, 255, 255, 0.55);
+    --border-color: #D9D9D9;
+    --badge-green: #DFFDDD;
+    --text-green: #008000;
+    --badge-red: #FBC3C3;
+    --text-red: #D30404;
     --icon-radius: 8.19px;
+    --dashboard-radius: 48px;
+    --searchbar-radius: 12px;
     --text-color: #0D0D0D;
+    --dmw-black: #23262F;
+    --text-gray: #A2A3A4;
+    --text-hover: #007E85;
+    --text-sm: 0.875rem; /* 14px */
+    --text-base: 1rem; /* 16px */
+    --text-lg: 1.125rem; /* 18px */
+    --text-xl: 1.25rem; /* 20px */
+    --text-2xl: 1.5rem; /* 24px */
+    --text-3xl: 1.875rem; /* 30px */
+    --text-4xl: 2.25rem; /* 36px */
+    --text-5xl: 3rem; /* 48px */
+    --text-6xl: 4rem; /* 64px */
+    --text-7xl: 5rem; /* 80px */
+    --text-8xl: 7.5rem; /* 120px */
 }
 
 * {
@@ -19,6 +42,10 @@ body {
     font-style: normal;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 /*********************************** MAIN WRAPPER STYLE ************************************/
 .main-wrapper {
     background: var(--main-color);
@@ -30,8 +57,12 @@ body {
     gap: 32px;
 }
 
+#dashboard-container {
+    padding: 10px;
+}
+
 /********************************* SIDEBAR NAVIGATION **********************************/
-.sidebar {
+#sidebar {
     height: 500.8px;
     width: 55.3px;
     padding: 4.61px 11.26px;
@@ -44,7 +75,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .sidebar-icon:hover, .sidebar-icon:active {
@@ -72,7 +103,189 @@ body {
 .dashboard {
     height: 1024px;
     background: var(--main-white);
-    border-radius: 64px;
+    border-radius: var(--dashboard-radius) 0 0 var(--dashboard-radius);
     width: 1336px;
     padding: 12px;
+}
+
+/********************************** Dashboard Header *******************************/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar {
+    background: var(--searchbar-bg);
+    width: 692.31px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: var(--searchbar-radius);
+}
+
+.searchbar input {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--text-gray);
+    line-height: normal;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.extra-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.doctor-profile {
+    width: 144.4px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+    border: var(--border-color) 2px solid;
+    border-radius: var(--icon-radius);
+}
+
+.profile-container span {
+    color: var(--dmw-black);
+    font-size: var(--text-base);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/***************************** HELLO DOCTOR SECTION *************************/
+#overview {
+    margin-block: 16px;
+}
+.hello-container {
+    background-color: var(--main-white);
+    color: var(--text-color);
+}
+
+.hello-container p {
+    font-size: var(--text-2xl);
+}
+
+.hello-container p span {
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: var(--text-hover);
+}
+
+.hello-content {
+    border-radius: 16.386px;
+    background: linear-gradient(66deg, rgba(0, 126, 133, 0.33) -5.25%, rgba(0, 126, 133, 0.34) 35.43%, #007E85 98.77%);
+    padding: 32px;
+    width: 815px;
+    height: 312px;
+    display: flex;
+    align-items: center;
+    margin-block: 1.5rem;
+}
+
+.hello-left p {
+    font-size: var(--text-2xl);
+    font-weight: 500;
+}
+
+.hello-left h1 {
+    font-size: var(--text-6xl);
+    font-weight: 500;
+}
+
+.patients-insights {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.patients-card {
+    width: 227.95px;
+    height: 122.75px;
+    flex-shrink: 0;
+    border-radius: 16.386px;
+    background: var(--card-bg);
+    padding: 18px;
+}
+
+.patients-card:last-child {
+    width: 199.706px;
+    height: 111.631px;
+}
+
+.badge-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.badge-infos h2 {
+    font-size: var(--text-4xl);
+    font-weight: 500;
+    color: black;
+}
+
+.badge-infos .badge {
+    width: 91.683px;
+    height: 34.776px;
+    flex-shrink: 0;;
+    background: var(--badge-green);
+    border-radius: 12.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.15));
+    transform: scale(1.3);
+    position: relative;
+}
+
+.patients-card:first-child .badge-infos .badge span{
+    color: var(--text-green);
+}
+
+.patients-card:first-child .badge-infos .badge {
+    position: absolute;
+    left: 330px;
+}
+
+.patients-card:last-child .badge-infos .badge{
+    background: var(--badge-red);
+    transform: scale(0.8);
+}
+
+.patients-card:last-child .badge-infos .badge span{
+    color: var(--text-red);
+}
+
+.hello-right {
+    width: 300px;
+    height: 386px;
+    background-image: url('/assets/doctor-picture.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    left: 660px;
+    top: 104px;
 }

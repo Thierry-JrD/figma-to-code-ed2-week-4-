@@ -39,7 +39,7 @@ const sidebarIconBuilder = (icon) => {
     let content = 
     `
     <div class='sidebar-icon'>
-        <a href="${icon.href}"><img src="${icon.img}" alt="${icon.title}">
+        <a href="${icon.href}"><img src="${icon.img}" alt="${icon.title}"></a>
     </div>
     `
 

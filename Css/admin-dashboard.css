@@ -40,6 +40,7 @@
 body {
     font-family:"Poppins", Arial, Helvetica, sans-serif;
     font-style: normal;
+    background: var(--main-color);
 }
 
 a:hover {
@@ -48,7 +49,6 @@ a:hover {
 
 /*********************************** MAIN WRAPPER STYLE ************************************/
 .main-wrapper {
-    background: var(--main-color);
     padding-block: 12px;
     padding-left: 32px;
     display: flex;

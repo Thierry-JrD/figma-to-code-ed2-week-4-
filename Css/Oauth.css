@@ -59,21 +59,21 @@ form .field label {
     font-size: 1.2em;
 }
 
-form .field input {
+input {
     padding: 10px;
     outline: none;
     border: 1px solid;
     border-radius: 5px;
 }
 
-#validation {
+button[type="submit"] {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid;
-    font-size: 1.2em;
+    font-size: 0.8em;
 }
 
-#validation:hover {
+button[type="submit"]:hover {
     filter: brightness(0.9);
 }
 

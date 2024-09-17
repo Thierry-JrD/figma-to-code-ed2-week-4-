@@ -8,21 +8,23 @@
 </head>
 <body>
 
-  <h2>Créer un compte</h2>
-  <form id="registerForm">
-    <label for="username">Nom d'utilisateur :</label>
-    <input type="text" id="username" name="username" required>
+  <div id="container">
+    <h2>Create account</h2>
+    <form id="registerForm">
+      <label for="username">Username :</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
     
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" name="password" required>
+      <label for="password">Password :</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
     
-    <label for="confirmPassword">Confirmez le mot de passe :</label>
-    <input type="password" id="confirmPassword" name="confirmPassword" required>
+      <label for="confirmPassword">Confirm password :</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
 
-    <button type="submit">Créer un compte</button>
-  </form>
+      <button type="submit">Créer un compte</button>
+    </form>
 
-  <p>Déjà inscrit ? <a href="OauthPage.html">Connectez-vous ici</a>.</p>
+    <p>Already subscribe ? <a href="OauthPage.html">LogIn here</a>.</p>
+  </div>
 
   <script src="../Js/register.js"></script>
 </body>

@@ -1,0 +1,86 @@
+/* Autorazation Page Stylesheet */
+
+:root {
+    --normal-gray: gray;
+    --dark-gray: #333;
+    --xxs: 0.75em;
+    --xs: 0.9em;
+    --circle-radius: 70px;
+    --card-radius: 10px;
+    --card-padding: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Ajoute du style basique */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #333;
+}
+
+#container {
+    border: 1px dashed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#container form .field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .field label {
+    font-size: 1.2em;
+}
+
+form .field input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#validation {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    font-size: 1.2em;
+}
+
+#validation:hover {
+    filter: brightness(0.9);
+}
+
+.tips {
+    border: 1px dashed;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -40,7 +40,7 @@ document.getElementById('appointmentForm').addEventListener('submit', function(e
   
     userAppointments.forEach((appointment) => {
       const li = document.createElement('li');
-      li.textContent = `Date: ${appointment.date}, Heure: ${appointment.time}`;
+      li.innerHTML = `<span class='date'>Date: ${appointment.date}</span> <span class='hour'>Hour: ${appointment.time}</span>`;
       appointmentList.appendChild(li);
     });
   }

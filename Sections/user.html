@@ -4,25 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User workspace</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../Css/userSpace.css">
 </head>
 <body>
 
-  <h2>Welcome, <span id="username">[Nom de l'utilisateur]</span></h2>
+  <div id="container">
+    <h2>Welcome, <span id="username">[Nom de l'utilisateur]</span></h2>
   
-  <h3>Take an appointment</h3>
-  <form id="appointmentForm">
-    <label for="date">Date :</label>
-    <input type="date" id="date" name="date" required>
+    <h3 class="title">Take an appointment</h3>
+    <form id="appointmentForm">
+      <div>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required>
     
-    <label for="time">Hour :</label>
-    <input type="time" id="time" name="time" required>
+        <label for="time">Hour :</label>
+        <input type="time" id="time" name="time" required>
+      </div>
     
-    <button type="submit">Reserved</button>
-  </form>
+      <button type="submit">Reserved</button>
+    </form>
 
-  <h3>My appointments</h3>
-  <ul id="appointmentList"></ul>
+    <h3 class="title">My appointments</h3>
+    <ul id="appointmentList"></ul>
+  </div>
 
   <script src="../Js/appointment.js"></script>
 </body>

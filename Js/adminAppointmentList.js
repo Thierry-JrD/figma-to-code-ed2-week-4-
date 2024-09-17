@@ -15,7 +15,7 @@ function afficherUtilisateursEtRendezVous() {
       
       userAppointments.forEach(function(appointment) {
         const appointmentItem = document.createElement('li');
-        appointmentItem.innerHTML = `<span class='date'>Date: ${appointment.date}</span> <span class='hour'>Heure: ${appointment.time}</span>`;
+        appointmentItem.innerHTML = `<span class='date'>Date: ${appointment.date}</span> <span class='hour'>Hour: ${appointment.time}</span>`;
         ul.appendChild(appointmentItem);
       });
   

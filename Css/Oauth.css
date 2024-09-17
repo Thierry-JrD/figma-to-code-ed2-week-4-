@@ -1,7 +1,10 @@
 /* Autorazation Page Stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --normal-gray: gray;
+    --normal-bg: #007E85;  /*#f0f0f0*/
+    --normal-fg: #fff;
     --dark-gray: #333;
     --xxs: 0.75em;
     --xs: 0.9em;
@@ -18,9 +21,9 @@
 
 /* Ajoute du style basique */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--normal-bg);
+    color: var(--normal-fg);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -30,7 +33,7 @@ body {
 }
 
 h2 {
-    color: #333;
+    color: var(--normal-fg);
 }
 
 #container {
@@ -62,15 +65,16 @@ form .field label {
 input {
     padding: 10px;
     outline: none;
-    border: 1px solid;
+    border: 1px solid var(--normal-bg);
     border-radius: 5px;
 }
 
 button[type="submit"] {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid;
+    border: 1px solid var(--normal-bg);
     font-size: 0.8em;
+    color: var(--normal-bg);
 }
 
 button[type="submit"]:hover {
@@ -83,4 +87,8 @@ button[type="submit"]:hover {
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+}
+
+.loginHere {
+    color: #ffffffb9;
 }

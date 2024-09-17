@@ -8,14 +8,14 @@ function afficherUtilisateursEtRendezVous() {
   
     for (const user in appointments) {
       const userItem = document.createElement('li');
-      userItem.textContent = `Utilisateur: ${user}`;
+      userItem.innerHTML = `<span class='userItemName'>User: ${user}</span>`;
   
       const userAppointments = appointments[user];
       const ul = document.createElement('ul');
       
       userAppointments.forEach(function(appointment) {
         const appointmentItem = document.createElement('li');
-        appointmentItem.textContent = `Date: ${appointment.date}, Heure: ${appointment.time}`;
+        appointmentItem.innerHTML = `<span class='date'>Date: ${appointment.date}</span> <span class='hour'>Heure: ${appointment.time}</span>`;
         ul.appendChild(appointmentItem);
       });
   

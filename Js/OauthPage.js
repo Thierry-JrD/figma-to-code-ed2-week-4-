@@ -27,7 +27,7 @@ form.addEventListener('submit', function(e) {
     
     // Redirection vers la page appropriée
     if (username === 'admin') {
-      window.location.href = 'admin.html'; // Admin
+      window.location.href = 'admin-dashboard.html'; // Admin
     } else {
       window.location.href = 'user.html'; // Utilisateur
     }

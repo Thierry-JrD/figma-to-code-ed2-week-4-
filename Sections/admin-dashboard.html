@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Dr. Kim !</title>
-    <link rel="stylesheet" href="./Css/admin-dashboard.css">
+    <link rel="stylesheet" href="../Css/admin-dashboard.css">
 </head>
 <body>
     <main class="main-wrapper">
@@ -15,7 +15,12 @@
                 <div class="main-content">
                     <div id="overview"></div>
                     <div id="patients">
-                        <div class="patients-list"></div>
+                        <div class="patients-list">
+
+                            <h3>Liste des utilisateurs et de leurs rendez-vous</h3>
+                            <ul id="userList"></ul>
+                            
+                        </div>
                         <div class="consultation"></div>
                     </div>
                 </div>
@@ -23,8 +28,9 @@
         </div>
     </main>
 
-    <script src="./Js/admin-dashboard/sidebar.js"></script>
-    <script src="./Js/admin-dashboard/header.js"></script>
-    <script src="./Js/admin-dashboard/helloDoctor.js"></script>
+    <script src="../Js/admin-dashboard/sidebar.js"></script>
+    <script src="../Js/admin-dashboard/header.js"></script>
+    <script src="../Js/admin-dashboard/helloDoctor.js"></script>
+    <script src="../Js/adminAppointmentList.js"></script>
 </body>
 </html>

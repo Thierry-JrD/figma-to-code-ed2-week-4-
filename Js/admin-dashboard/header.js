@@ -4,17 +4,17 @@ const header = document.getElementById('header')
 
 const profile = {
     name: "Dr. Kim",
-    img: "assets/doctor-profile.png"
+    img: "../assets/doctor-profile.png"
 }
 
 const searchBar = {
     placeholder:"Search",
-    img: "assets/search.png"
+    img: "../assets/search.png"
 }
 
 const extraIcon = {
-    message : "assets/messages.png",
-    notification: "assets/notification.png"
+    message : "../assets/messages.png",
+    notification: "../assets/notification.png"
 }
 
 const headerRender = () => {
@@ -36,7 +36,7 @@ const headerRender = () => {
     </div>
     `
 
-    return headerContainer
+    return headerContainer;
 }
 
-header.innerHTML = headerRender()
+header.innerHTML = headerRender();

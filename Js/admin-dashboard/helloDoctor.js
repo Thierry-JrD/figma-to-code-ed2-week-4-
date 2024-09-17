@@ -1,4 +1,4 @@
-const helloDoctor = document.getElementById('overview')
+const helloDoctor = document.getElementById('overview');
 
 const visitors = {
     visitorsAmount: 104,
@@ -6,9 +6,9 @@ const visitors = {
     oldPatientsPercentage: "20%",
     newPatients: 40,
     newPatientsPercentage: "51%",
-    increaseIcon: "assets/increase.png",
-    discreaseIcon: "assets/discrease.png",
-    fullDoctorePicture: "assets/doctor-picture.png"
+    increaseIcon: "../assets/increase.png",
+    discreaseIcon: "../assets/discrease.png",
+    fullDoctorePicture: "../assets/doctor-picture.png"
 }
 
 const helloRender = () => {
@@ -49,7 +49,7 @@ const helloRender = () => {
     </div>
     `
 
-    return helloContent
+    return helloContent;
 }
 
-helloDoctor.innerHTML = helloRender()
+helloDoctor.innerHTML = helloRender();

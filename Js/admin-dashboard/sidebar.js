@@ -5,33 +5,33 @@ const sidebar = document.getElementById('sidebar')
 const sidebarIcons = [
     {
         title: "home",
-        img: "assets/home.png",
+        img: "../assets/home.png",
         href: "home.html"
     },
     {   
         title: "calendar",
-        img: "assets/calendar.png",
+        img: "../assets/calendar.png",
         href: "calendar.html"
     },
     {
         title: "chats",
-        img: "assets/chats.png",
+        img: "../assets/chats.png",
         href: "chats.html"
     },
     {
         title: "stats",
-        img: "assets/stats.png",
+        img: "../assets/stats.png",
         href: "stats.html"
     },
     {
         title: "settings",
-        img: "assets/settings.png",
+        img: "../assets/settings.png",
         href: "settings.html"
     },
     {
         title: "logout",
-        img: "assets/logout.png",
-        href: "logout.html"
+        img: "../assets/logout.png",
+        href: "../index.html"
     }
 ]
 

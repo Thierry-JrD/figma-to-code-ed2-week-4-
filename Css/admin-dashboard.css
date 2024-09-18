@@ -16,8 +16,15 @@
     --searchbar-radius: 12px;
     --text-color: #0D0D0D;
     --dmw-black: #23262F;
+    --patient-text-green: #128983;
     --text-gray: #A2A3A4;
+    --patient-text-rose: #F62088;
+    --patient-badge-rose: rgba(246, 32, 136, 0.15);
+    --patient-badge-blue: rgba(0, 0, 255, 0.15);
+    --patient-badge-green: rgba(18, 137, 131, 0.25);
+    --patient-text-blue: #0000FF;
     --text-hover: #007E85;
+    --text-xs: 0.75rem;
     --text-sm: 0.875rem; /* 14px */
     --text-base: 1rem; /* 16px */
     --text-lg: 1.125rem; /* 18px */
@@ -288,4 +295,154 @@ a:hover {
     position: absolute;
     left: 660px;
     top: 104px;
+}
+
+
+/************************************************ PATIENTS LIST CUSTOMIZATION ****************************************/
+.patients {
+    width: 815.21px;
+    padding: 16px;
+}
+
+#patients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.patients-headline {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.patients-headline h3 {
+    font-size: var(--text-2xl);
+    font-weight: 500;
+    color: black;
+}
+
+.patients-headline select {
+    border: none;
+    font-size: var(--text-base);
+    font-weight: 400;
+    color: var(--text-gray);
+}
+
+.patients-headline option {
+    font-size: var(--text-base);
+    font-weight: 400;
+    color: var(--dmw-black);
+}
+
+.patients-row {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 2rem;
+}
+
+.patient-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.patient-data {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.patient-picture {
+    width: 64px;
+    height: 50.51px;
+    background: var(--badge-red);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-base);
+    font-weight: 400;
+    text-align: center;
+    color:black;
+}
+
+.patient-item:first-child .patient-picture {
+    background: var(--patient-badge-rose);
+}
+
+.patient-item:nth-child(2) .patient-picture {
+    background: var(--patient-badge-blue);
+}
+
+.patient-item:nth-child(3) .patient-picture {
+    background: var(--patient-badge-green);
+}
+
+.patient-item:last-child .patient-picture {
+    background: var(--patient-badge-rose);
+}
+
+.patient-appointment h3 {
+    font-size: var(--text-lg);
+    font-weight: 500;
+}
+
+.patient-appointment h6 {
+    font-size: var(--text-xs);
+    font-weight: 500;
+}
+
+.patient-item:first-child .patient-data .patient-appointment  h6 {
+    color: var(--patient-text-rose);
+}
+
+
+.patient-item:nth-child(2) .patient-data .patient-appointment  h6 {
+    color: var(--patient-text-blue);
+}
+
+.patient-item:nth-child(3) .patient-data .patient-appointment  h6 {
+    color: var(--patient-text-green);
+}
+
+.patient-item:last-child .patient-data .patient-appointment  h6 {
+    color: var(--patient-text-rose);
+}
+
+.patient-item .patient-data .appointment-time {
+    width: 71.69px;
+    height: 26.63px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-xs);
+    font-weight: 400;
+}
+
+.patient-item:first-child .patient-data .appointment-time {
+    background: var(--patient-badge-rose);
+    color: var(--patient-text-rose);
+}
+
+.patient-item:nth-child(2) .patient-data .appointment-time {
+    background: var(--patient-badge-blue);
+    color: var(--patient-text-blue);
+}
+
+.patient-item:nth-child(3) .patient-data .appointment-time {
+    background: var(--patient-badge-green);
+    color: var(--patient-text-green);
+}
+
+.patient-item:last-child .patient-data .appointment-time {
+    color: var(--patient-text-rose);
+    background: var(--patient-badge-rose);
 }

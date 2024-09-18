@@ -101,7 +101,7 @@ a:hover {
 
 /********************************* DASHBOARD CONTAINER **********************************/
 .dashboard {
-    /*height: 1024px;*/
+    height: 1024px;
     background: var(--main-white);
     border-radius: var(--dashboard-radius) 0 0 var(--dashboard-radius);
     width: 1336px;

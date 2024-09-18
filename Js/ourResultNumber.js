@@ -36,4 +36,8 @@
     return ourResultNumberContent;
  };
 
- ourResultNumber.innerHTML = ourResultNumberRender();
+ ourResultNumber.innerHTML = 
+ `
+ <h2>Our results in numbers</h2>
+ <div class='resultContainer'>${ourResultNumberRender()}</div>
+ `;

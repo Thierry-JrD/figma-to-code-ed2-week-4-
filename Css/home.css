@@ -23,13 +23,10 @@
 /* Ajoute du style basique */
 body {
     font-family: 'Poppins', sans-serif;
-    /*margin: 0;
+    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Calibri', sans-serif;*/
+    flex-direction: column;
     background-color: #ECECEC;
     color: #333;
 }
@@ -41,7 +38,13 @@ h1 {
 /* General */
 
 .logo h3 {
+    font-size: 1.5em;
     line-height: 30px;
+    color: var(--normal-bg);
+}
+
+.logo h3 span {
+    color: var(--normal-green);
 }
 
 a {
@@ -53,70 +56,64 @@ a {
     font-weight: 500;
 }
 
-button, .btnLogin {
+/*button, .btnLogin {
     padding: 5px 10px;
-}
+}*/
 
 /* Header */
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border: 1px solid red;
+    justify-content: space-around;
+    border: 1px solid;
+    gap: 20px;
+    padding: 20px;
 }
 
-header h3 {
-    font-size: 1.5em;
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+header a:hover {
+    text-decoration: underline;
     color: var(--normal-bg);
 }
 
-header h3 span {
-    color: var(--normal-green);
-}
-
-header ul {
+nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    list-style-type: none;
+    list-style: none;
+    gap: 20px;
 }
 
-header ul li {
-    padding: 0 10px;
-}
-
-
-
-header .home, header a:hover {
+nav ul .home {
     color: var(--normal-bg);
     text-decoration: underline;
 }
 
-
-header .connection {
+nav #connection {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 }
 
-header .connection .signUp {
-    color: var(--normal-bg);
-}
-
-header .connection .btnLogin {
-    color: var(--normal-white);
-    text-decoration: none;
+#connection .btnLogin {
+    text-align: center;
     background: var(--normal-bg);
-    border-radius: 5px;
+    color: var(--normal-white);
     padding: 5px 20px;
-    transition: 0.5s ease;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-header .connection .btnLogin:hover {
-    transform: scale(1.2);
+#connection .btnLogin:hover {
+    transform: scale(1.05);
 }
+
 
 /* Main */
 
@@ -138,9 +135,66 @@ main {
     border: 1px solid;
 }
 
+#hero .content {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.9em;
+}
+
+#hero .content h2 {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+#hero .content .primary {
+    color: var(--normal-bg);
+}
+
+#hero .content .green {
+    color: var(--normal-green);
+}
+
+#hero .content p {
+    margin-bottom: 10px;
+}
+
+#hero .content button {
+    text-align: center;
+    background: var(--normal-bg);
+    color: var(--normal-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+#hero .content button:hover {
+    transform: scale(1.05);
+}
+
 #hero .imgFrame {
-    background: #000;
-    border-radius: var(--card-radius);
+    position: relative;
+    width: 300px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .imgFrame img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#hero .imgFrame img:nth-child(0) {
+    z-index: 3;
+}
+
+#hero .imgFrame img:nth-child(1) {
+    z-index: 2;
 }
 
 /* Find A Doctor Section */
@@ -158,6 +212,21 @@ main {
 /* Our Result In Number Section*/
 
 #ourResultNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#ourResultNumber h2 {
+    color: var(--normal-bg);
+}
+
+#ourResultNumber p {
+    font-size: 0.9em;
+}
+
+#ourResultNumber .resultContainer {
     margin: 20px;
     display: flex;
     align-items: center;

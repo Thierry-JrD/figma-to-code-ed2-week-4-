@@ -6,40 +6,40 @@ const servicesWeProvide = document.getElementById('servicesWeProvide');
 
 const servicesWeProvideData = [
     {
-        'img': '',
+        'img': './assets/dental.png',
         'title': 'Dental treatments',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': '',
+        'img': './assets/bones.png',
         'title': 'Bones treatments',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': '',
+        'img': './assets/diagnosis.png',
         'title': 'Diagnosis',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'Text',
     },
     {
-        'img': '',
+        'img': './assets/cardiology.png',
         'title': 'Cardiology',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': '',
+        'img': './assets/surgery.png',
         'title': 'Surgery',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'learnMore': 'link',
     },
     {
-        'img': '',
+        'img': './assets/eye-care.png',
         'title': 'Eye care',
         'content': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
-        'learnMore': 'link',
+        'learnMore': 'learn more',
     },
 ];
 
@@ -47,11 +47,13 @@ const servicesCardRender = (obj) => {
     let content = 
     `
     <div class='card'>
-        <div class="imgFrame">${obj.img}</div>
-        <div>
+        <div class="imgFrame">
+            <img src='${obj.img}' alt='${obj.img}.card' />
+        </div>
+        <div class='cardInnerContent'>
             <h3>${obj.title}</h3>
             <p>${obj.content}</p>
-            <a href="#">${obj.learnMore}</a>
+            <a href="#">Learn more &rarr;</a>
         </div>
     </div>
     `;
@@ -72,6 +74,6 @@ const servicesWeProvideRender = () => {
 servicesWeProvide.innerHTML = 
 `
     <h2>Services we provide </h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
+    <p class='contentPara'>Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.</p>
     <div class="grid">${servicesWeProvideRender()}</div>
 `;

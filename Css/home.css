@@ -252,16 +252,55 @@ main {
 #reasonToChoseUs {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 100px;
+    gap: 50px;
     width: 800px;
     margin: 20px 0;
     padding: 40px;
     border: 1px solid;
 }
 
+#reasonToChoseUs h2 {
+    color: var(--normal-bg);
+}
+
+#reasonToChoseUs .content {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.9em;
+}
+
+#reasonToChoseUs .btns {
+    margin-top: 20px;
+}
+
+#reasonToChoseUs button {
+    text-align: center;
+    background: var(--normal-bg);
+    color: var(--normal-white);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+#reasonToChoseUs button:hover {
+    color: var(--normal-bg);
+    background: var(--normal-white);
+    border: 1px solid var(--normal-bg);
+}
+
 #reasonToChoseUs .imgFrame {
-    background: #000;
-    border-radius: var(--card-radius);
+    position: relative;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reasonToChoseUs .imgFrame img {
+    width: 100%;
 }
 
 /* Services we provided Section */
@@ -273,11 +312,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 0.9em;
 }
 
-#servicesWeProvide :nth-child(2) {
+#servicesWeProvide h2 {
+    color: var(--normal-bg);
+}
+
+#servicesWeProvide .contentPara {
     text-align: center;
 }
+
+/*#servicesWeProvide :nth-child(2) {
+    text-align: center;
+}*/
 
 .grid {
     padding: 20px;
@@ -287,16 +335,34 @@ main {
 }
 
 #servicesWeProvide .card {
-    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--normal-white);
     border-radius: var(--card-radius);
     padding: var(--card-padding);
 }
 
 #servicesWeProvide .card .imgFrame {
-    width: 100%;
-    height: 70px;
-    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: var(--card-radius);
+}
+
+#servicesWeProvide .card .imgFrame img {
+    width: 100%;
+}
+
+
+#servicesWeProvide .card .cardInnerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#servicesWeProvide .card .cardInnerContent h3, .cardInnerContent a {
+    color: var(--normal-bg);
 }
 
 /* Meet Our Team Members Section */

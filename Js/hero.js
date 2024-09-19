@@ -22,7 +22,7 @@ const heroRender = () => {
             <p>At our hospital, we are dedicated to providing exceptional medical care to our patients and their families. Our experienced team of medical professionals, cutting-edge technology, and compassionate approach make us a leader in the healthcare industry</p> 
         </div> 
         <div>
-            <button>Appointment</button>
+            <button id="appointmentBtn">Appointment</button>
         </div>  
     </div>
     <div class='imgFrame'>

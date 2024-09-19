@@ -4,7 +4,7 @@ const meetOurTeamMembers = document.getElementById('meetOurTeamMembers');
 
 const meetOurTeamMembersData = [
     {
-        'img': '',
+        'img': './assets/profiles/ceo.png',
         'name': 'John Carter',
         'level': 'CEO & Co-Founder',
         'description': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
@@ -32,9 +32,9 @@ const meetOurTeamMembersData = [
         ]
     },
     {
-        'img': '',
-        'name': 'John Carter',
-        'level': 'CEO & Co-Founder',
+        'img': './assets/profiles/dental-specialist.png',
+        'name': 'Sophie Moore',
+        'level': 'dental specialist',
         'description': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'links': [
             {
@@ -60,9 +60,9 @@ const meetOurTeamMembersData = [
         ]
     },
     {
-        'img': '',
-        'name': 'John Carter',
-        'level': 'CEO & Co-Founder',
+        'img': './assets/profiles/orthopedic.png',
+        'name': 'Matt Cannon',
+        'level': 'orthopedic',
         'description': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'links': [
             {
@@ -88,9 +88,9 @@ const meetOurTeamMembersData = [
         ]
     },
     {
-        'img': '',
-        'name': 'John Carter',
-        'level': 'CEO & Co-Founder',
+        'img': './assets/profiles/brain-surgeon.png',
+        'name': 'Andy Smith',
+        'level': 'brain surgeon',
         'description': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'links': [
             {
@@ -116,9 +116,9 @@ const meetOurTeamMembersData = [
         ]
     },
     {
-        'img': '',
-        'name': 'John Carter',
-        'level': 'CEO & Co-Founder',
+        'img': './assets/profiles/heart-specialist.png',
+        'name': 'Lily Woods',
+        'level': 'heart specialist',
         'description': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'links': [
             {
@@ -143,9 +143,9 @@ const meetOurTeamMembersData = [
             },
         ]
     },{
-        'img': '',
-        'name': 'John Carter',
-        'level': 'CEO & Co-Founder',
+        'img': './assets/profiles/eye-specialist.png',
+        'name': 'Patrick Meyer',
+        'level': 'eye specialist',
         'description': 'Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel facilisis volutpat est velitolm',
         'links': [
             {
@@ -179,16 +179,16 @@ const meetCardRender = (obj) => {
     let content = 
     `
     <div class='card'>
-        <div class="imgFrame">${obj.img}</div>
+        <div class="imgFrame">
+            <img src="${obj.img}" alt="${obj.img}.card"/>
+        </div>
         <div class="level">
             <h4>${obj.name}</h4>
             <h5>${obj.level}</h5>
         </div>
         <div class="description">${obj.description}</div>
         <div>
-            ${obj.links.map((el) => {
-                '<a href="#">' + el.type + '</a>'
-            }).join('')}
+            <a href="#">*Follow*</a>
         </div>
     </div>
     `;

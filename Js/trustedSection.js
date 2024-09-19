@@ -5,32 +5,32 @@ const trustedSection = document.getElementById('trustedSection');
 const trustedSectionData = [
     {
         'id': 'Google',
-        'imgurl': '',
+        'imgurl': './assets/logos/Google.png',
         'src': ''
     },
     {
         'id': 'facebook',
-        'imgurl': '',
+        'imgurl': './assets/logos/Facebook.png',
         'src': ''
     },
     {
         'id': 'youtube',
-        'imgurl': '',
+        'imgurl': './assets/logos/Youtube.png',
         'src': ''
     },
     {
         'id': 'Pinterest',
-        'imgurl': '',
+        'imgurl': './assets/logos/Pinterest.png',
         'src': ''
     },
     {
         'id': 'twitch',
-        'imgurl': '',
+        'imgurl': './assets/logos/Twitch.png',
         'src': ''
     },
     {
         'id': 'webflow',
-        'imgurl': '',
+        'imgurl': './assets/logos/Webflow.png',
         'src': ''
     },
 ];
@@ -39,7 +39,10 @@ const trustedSectionRender = () => {
     let trustedSectionContent = '';
 
     trustedSectionData.map((el) => {
-        trustedSectionContent += `<h2>${el.id}</h2>`;
+        trustedSectionContent += 
+        `<a href="#">
+            <img src="${el.imgurl}" alt="${el.id}.logo">
+        </a>`;
     });
     
     return trustedSectionContent;
@@ -47,6 +50,6 @@ const trustedSectionRender = () => {
 
 trustedSection.innerHTML = 
 `
-    <h3>Trusted by 10,000+ companies around the world</h3>
+    <h2 class="title">Trusted by 10,000+ companies around the world</h2>
     <div class="collaborators">${trustedSectionRender()}</div>
 `;

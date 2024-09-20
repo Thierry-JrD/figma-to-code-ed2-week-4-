@@ -44,5 +44,5 @@ const footerRender = () => {
 };
 
 footerLinks.innerHTML = footerRender();
-copyrightDate.innerHTML = year;
+copyrightDate.innerHTML = year; 
 

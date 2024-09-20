@@ -34,7 +34,7 @@ const footerRender = () => {
         <div class='section'>
             <h3>${el.title}</h3>
             <ul>
-                ${el.content.map((subEL) => '<li>' + subEL + '</li>').join('')}
+                ${el.content.map((subEL) => '<li><a href="#">' + subEL + '</a></li>').join('')}
             </ul>
         </div>
         `;

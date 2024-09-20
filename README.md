@@ -9,5 +9,5 @@
 
 ```Avertissement : Si vous ne renseignez pas les identifiants exacts lors de la création du compte administrateur, vous n'accéderez pas à la Dashboard Admin.```
 
-Vous pouvez faire un tour sur la démo du projet à cette 🔥[ici](https://figma-to-code-ed2-week-4.vercel.app/)🔥
+Vous pouvez faire un tour sur la démo du projet 🔥[ici](https://figma-to-code-ed2-week-4.vercel.app/)🔥
 

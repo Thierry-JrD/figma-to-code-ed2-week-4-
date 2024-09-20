@@ -8,3 +8,6 @@
 * Pour vous connecter en tant qu'administrateur, vous devez également créer un compte au préalable. Les identifiants à renseigner sont : "admin" pour le Nom d'utilisateur et "admin" pour le Mot de passe.
 
 ```Avertissement : Si vous ne renseignez pas les identifiants exacts lors de la création du compte administrateur, vous n'accéderez pas à la Dashboard Admin.```
+
+Vous pouvez faire un tour sur la démo du projet à cette 🔥[ici](https://figma-to-code-ed2-week-4.vercel.app/)🔥
+
